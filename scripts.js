@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loader.classList.remove('hidden');
 
             try {
-                const response = await fetch('http://localhost:8086/saveImage', {
+                const response = await fetch('https://MovieSearch.cfapps.us10-001.hana.ondemand.com/saveImage', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
