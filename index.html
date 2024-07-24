@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Statue Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Statue Store</h1>
+        
+      
+    </header>
+
+    <main>
+        <section>
+            <h2>Upload a New Statue</h2>
+            <form id="upload-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" name="contact" required>
+
+                <label for="offer">Offer:</label>
+                <input type="number" id="offer" name="offer" required>
+
+                <label for="ratings">Ratings:</label>
+                <input type="number" id="ratings" name="ratings" min="0" max="5" required>
+
+                <label for="file">Upload Image:</label>
+                <input type="file" id="file" name="file" accept="image/*" required>
+
+                <button type="submit">Upload</button>
+            </form>
+            <p id="response-message"></p>
+            <div id="loader" class="hidden"></div> <!-- Loader element -->
+        </section>
+    </main>
+
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
